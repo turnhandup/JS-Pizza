@@ -1,0 +1,128 @@
+
+.body{
+    position:relative;
+    font-family:@font;
+}
+
+.pizza-card {
+     max-width: 320px;
+     max-height:1000px;
+    .pizza-icon {
+        width:100%;
+        max-width: 300px;
+      }
+
+      h3 {
+        color: @mainColor;
+        background-color: lighten(@mainColor, 45%);
+      }
+    .thumbnail{
+      
+        position:relative;
+        max-width: 320px;
+        max-height: 1000px;
+        height:650px;
+        box-shadow:10px grey;
+      }
+    .title{
+        color:@mainColor;
+        font-size:@thirtypix;
+        font-family:@font;
+        font-weight:600;
+    }   
+    .type{
+        color:grey;
+        font-size:12px;
+    }
+    .label{
+        position:absolute;
+        font-size:@twentypix;
+        top:-10px;
+        right:-10px;
+        
+    }
+    .info{
+        text-align:center;
+        .icons{
+            margin-bottom:30px;
+            margin-top:15px;
+        }
+        .btn-warning{
+            background-color:@mainColor;
+            box-shadow:0 2px lightgrey;
+        }
+        .price{
+            font-size:@thirtypix;
+            font-weight:600;
+        .uah{
+            font-size:12px;
+            font-weight:300;
+            }
+        }
+        
+    }
+    
+}
+.filter-wrapper{
+    margin-bottom:30px;
+    text-align:center;
+    .all{
+        font-size:30px;
+    }
+    .all-amount{
+        background-color:#ec6a1c;
+        font-size:20px;
+            border-radius:15px;
+            padding:3px 12px;
+        color:white;
+        margin-bottom:15px;
+        }
+    .filters span:hover{
+        background-color:lightgrey;
+    }
+    .filters span{
+        padding:12px 20px;
+        border-radius:10px;
+        font-size:15px;
+    }
+     .all-filter{
+        background-color:rgb(234,134,46);
+        color:white;
+        }
+     
+}
+
+@media(max-width: 800px){}
+.wrp{
+    margin-top:100px;
+}
+.left-panel{
+    padding-right:350px;
+    .sale{
+        position:fixed;
+        bottom:0px;
+        left:25px;
+        height:105px;
+        background-color:rgb(234,134,46);
+        color:white;
+        text-align:center;
+        font-size:15px;
+        font-weight:600;
+        padding:0px 20px;
+        z-index:2000;
+        margin-top:300px;
+        .title{
+            border-bottom: 2px dotted #d16301;
+        }
+        
+        .top-logo-part{
+        position:absolute;
+        width:100px;
+        height:11px;
+        bottom:105px;
+        left:0;
+        background-image:url(../images/discount.svg);
+        z-index:2000;
+        }
+    }
+}

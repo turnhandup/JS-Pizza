@@ -1,0 +1,249 @@
+
+@mainColor:#ec6a1c;
+@topPanelColor:rgba(256,256,256, 0.7);
+@twentypix:20px;
+@thirtypix:30px;
+@font:"Helvetica Neue";
+
+
+@import "pizza/pizza-card";
+.top-panel{
+    position:fixed;
+    background-color:black;
+    left:0px;
+    top:0px;
+    right:0px;
+    height:90px;
+    font-size:@twentypix;
+    padding-left:130px;
+    padding-right:350px;
+    padding-top:0px;
+    opacity:0.8;
+    z-index:1000;
+     .pizza-link{
+            text-decoration:none;
+            color:white;
+        }
+    .info-top-bar{
+        width:100%;
+        height:45px;
+        border-bottom:1px solid lightgrey;
+        margin-top:5px;
+        .phone-number{
+            display:inline-block;
+            color:@topPanelColor;
+        }
+        .schedule{
+            display:inline-block;
+            color:@topPanelColor;
+            font-size:12px;
+            padding-left:20px;
+
+        }
+        .free-pizza{
+            display:inline-block;
+            color:@topPanelColor;
+            font-size:15px;
+            padding-left:20px;
+
+        }
+        .sign-in-button{
+            display:inline-block;
+            color:white;
+            float:right;
+            margin-right:10px;
+
+        }
+        
+    }
+    .info-bottom-bar{
+        width:100%;
+        height:45px;
+       
+        
+    }
+    .logo{
+        opacity:1;
+    }
+}
+.logo{
+    position:fixed;
+    top:0px;
+    left:0px;
+    background-color:rgb(234,134,46);
+    color:white;
+    text-align:center;
+    height:90px;
+    padding-left:18px;
+    padding-right:18px;
+    padding-top:10px;
+    margin-left:20px;
+    z-index:3000;
+    .pizza{
+        font-size:@twentypix;
+    }
+    .KMA{
+        font-size:@thirtypix;
+    }
+    .bottom-logo-part{
+        position:absolute;
+        width:100px;
+        height:11px;
+        transform:rotate(180deg);
+      
+        left:0;
+        background-image:
+             url(../images/discount.svg);
+        top:90px;
+        z-index:2000;
+        
+    }
+}
+@media(max-width: 800px){}
+.right-panel{
+    min-width:350px;;
+    width:350;
+    position:fixed;
+    height:100%;
+    padding:0 !important;
+    z-index:2000;
+    top:0;
+    right:0;
+    bottom:0;
+    display:box;
+    background-color: #f5f5f5;
+    box-shadow:0 0 10px grey;
+    .order-title{
+        position:relative;
+        padding-top:30px;
+        padding-bottom:20px;
+        padding-left:5px;
+        padding-right:5px;
+        background-color:white;
+        .order{
+            font-size:25px;
+            font-family:@font;
+            font-weight:700;
+        }
+        .order-amount{
+            background-color:#ec6a1c;
+            border-radius:15px;
+            padding:3px 10px;
+            color:white;
+        }
+        .clean-order{
+            position:absolute;
+            right:10px;
+            top:50%;
+            font-size:12px;
+            color:grey;
+            
+        }
+    }
+    .order-two{
+        padding:20px;
+          border-bottom: 2px solid lightgrey;
+       
+        background-color:#f5f5f5;
+        .order-title-two{
+            color:@mainColor;
+            font-size:@twentypix;
+            font-family:@font;
+        }
+        .size{
+            margin-right:20px;
+        }
+        .weight{
+            margin-right:20px;
+        }
+        .order-price-two{
+            font-size:18px;
+            font-weight:400;
+            vertical-align: middle;
+        }
+        .picture-container{
+         position: absolute;
+            right: -48px;
+            top: 100px;
+            border-radius: 50% 0 0 50%;
+            max-height: 96px;
+            max-width: 96px;
+            vertical-align:middle;
+        }
+        .plus-button{
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            text-align:center;
+            border-radius: 100%;
+            padding-top: 8px;
+            font-size: 10px;
+            border: none;
+            color:white;
+            background: #16ab39;
+        }
+         .minus-button{
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            text-align:center;
+            border-radius: 100%;
+            padding-top: 8px;
+            font-size: 10px;
+            border: none;
+            color:white;
+            background: darkred;
+        }
+        .delete-button{
+             width: 35px;
+            height: 35px;
+            cursor: pointer;
+            text-align:center;
+            color:darkorange;
+            font-size: 10px;
+            padding-top: 8px;
+            border-radius: 100%;
+            border: 2px solid lightgrey;
+            background: white;
+        }
+    }
+     .right-three{
+         border-top:1px solid lightgrey;
+            position:absolute;
+            bottom:0px;
+            background-color:white;
+            width:100%;
+           display:block;
+         .order-price-title{
+             font-size:15px;
+             font-weight:700;
+         }
+         .order-price{
+             float:right;
+             text-align:right;
+             font-weight:700;
+             margin-right:20px;
+             font-size:@twentypix;
+         }
+         .order-button-wrapper{
+              width:100%;
+              text-align:center;
+              margin-bottom:15px;
+              margin-top:15px;
+             .btn{
+               
+                 width:80%;
+             }
+        }
+        }
+
+footer{
+     border-top: 1px solid lightgrey;
+     padding-top:35px;
+    p{
+        color:grey;
+        text-align:center;  
+    }
+    }
+
+}
