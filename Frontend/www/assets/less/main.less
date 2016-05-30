@@ -137,9 +137,16 @@
             top:50%;
             font-size:12px;
             color:grey;
-            
+            cursor: pointer;
         }
     }
+    #cart{
+        overflow: scroll;
+        overflow-x:hidden;
+        overflow-y: auto;
+        width:100%;
+        height:80%;
+        margin-bottom:100px;
     .order-two{
         padding:20px;
           border-bottom: 2px solid lightgrey;
@@ -157,18 +164,18 @@
             margin-right:20px;
         }
         .order-price-two{
-            font-size:18px;
+            font-size:14px;
             font-weight:400;
-            vertical-align: middle;
+            
         }
         .picture-container{
-         position: absolute;
-            right: -48px;
-            top: 100px;
+           position: relative;
+            float: right;
+            right: -70px;
+            top: -100px;
             border-radius: 50% 0 0 50%;
             max-height: 96px;
             max-width: 96px;
-            vertical-align:middle;
         }
         .plus-button{
             height: 30px;
@@ -176,7 +183,7 @@
             cursor: pointer;
             text-align:center;
             border-radius: 100%;
-            padding-top: 8px;
+            
             font-size: 10px;
             border: none;
             color:white;
@@ -188,25 +195,28 @@
             cursor: pointer;
             text-align:center;
             border-radius: 100%;
-            padding-top: 8px;
+            
             font-size: 10px;
             border: none;
             color:white;
-            background: darkred;
+            background: red;
+        }
+        .quantity{
+            color:black;
         }
         .delete-button{
-             width: 35px;
-            height: 35px;
+             width: 30px;
+            height: 30px;
             cursor: pointer;
             text-align:center;
             color:darkorange;
             font-size: 10px;
-            padding-top: 8px;
             border-radius: 100%;
             border: 2px solid lightgrey;
             background: white;
         }
     }
+        }
      .right-three{
          border-top:1px solid lightgrey;
             position:absolute;
@@ -237,13 +247,12 @@
         }
         }
 
-footer{
+}
+.foot{
      border-top: 1px solid lightgrey;
      padding-top:35px;
-    p{
-        color:grey;
-        text-align:center;  
+    p{color:grey;
+        text-align:center;  }
+        
+    
     }
-    }
-
-}

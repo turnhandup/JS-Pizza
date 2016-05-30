@@ -7,7 +7,6 @@
 
 .pizza-card {
      max-width: 320px;
-     max-height:1000px;
     .pizza-icon {
         width:100%;
         max-width: 300px;
@@ -17,14 +16,10 @@
         color: @mainColor;
         background-color: lighten(@mainColor, 45%);
       }
-    .thumbnail{
-      
-        position:relative;
-        max-width: 320px;
-        max-height: 1000px;
-        height:650px;
-        box-shadow:10px grey;
-      }
+    .caption{
+        min-height:350px;
+        htight:100%;
+    }
     .title{
         color:@mainColor;
         font-size:@thirtypix;
@@ -65,33 +60,39 @@
     
 }
 .filter-wrapper{
-    margin-bottom:30px;
+    margin-bottom:50px;
     text-align:center;
     .all{
         font-size:30px;
     }
-    .all-amount{
-        background-color:#ec6a1c;
-        font-size:20px;
-            border-radius:15px;
-            padding:3px 12px;
-        color:white;
-        margin-bottom:15px;
-        }
-    .filters span:hover{
-        background-color:lightgrey;
-    }
+    
     .filters span{
-        padding:12px 20px;
+        padding:8px 20px;
         border-radius:10px;
         font-size:15px;
     }
-     .all-filter{
-        background-color:rgb(234,134,46);
-        color:white;
-        }
-     
 }
+  .filters-hovered{
+       cursor:pointer;
+        background-color: white;
+        font-size:20px;
+        border-radius:15px;
+        margin-bottom:15px;
+    }
+   .filters-hovered:hover{
+        cursor:pointer;
+        background-color: lightgrey;
+    }
+    .filters-selected{
+        cursor:pointer;
+        background-color:#ec6a1c;
+        font-size:20px;
+        border-radius:15px;
+        color:white;
+        margin-bottom:15px;
+    }
+     
+
 
 @media(max-width: 800px){}
 .wrp{
@@ -126,4 +127,10 @@
         z-index:2000;
         }
     }
+}
+.all-amount{
+    background-color:#ec6a1c;
+            border-radius:15px;
+            padding:3px 10px;
+            color:white;
 }

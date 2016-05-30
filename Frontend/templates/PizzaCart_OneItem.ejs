@@ -1,9 +1,37 @@
-<div>
-    <%= pizza.title %> (<%= size %>)
-    <div>Ціна: <%= pizza[size].price %> грн.</div>
-    <div>
-        <button class="btn btn-danger minus">-</button>
-        <span class="label label-default"><%= quantity %></span>
-        <button class="btn btn-success plus">+</button>
+<div class="order-two">
+    <div class="info">
+        <div class="order-title-two"><%= pizza.title %>(<%= size %>)</div>
+        <div>
+            <div class="order-detailed-info">
+                <span><img src="assets/images/size-icon.svg"></span>
+                <span class="size">
+                <% if(size=='big_size'){ %>
+                    <%= pizza.big_size.size %>
+                <% } %> 
+                <% if(size=='small_size') { %>
+                    <%= pizza.small_size.size %>
+                <% } %>
+                </span> 
+                <span><img src="assets/images/weight.svg"></span>
+                <span class="weight">
+                    <% if(size=='big_size'){ %> 
+                        <%= pizza.big_size.weight %>
+                    <% } %>
+                    <% if(size=='small_size') { %> 
+                        <%= pizza.small_size.weight %>
+                    <% } %>
+                </span>
+            </div>
+            <div class="order-action-buttons"> 
+                <div class="order-price-two" >Ціна: <%= pizza.small_size.price %> грн.</div>
+                <button class="minus-button glyphicon glyphicon-minus white minus btn btn-danger"></button>
+                <span class="label quantity"><%= quantity %></span>
+                <button class="plus-button glyphicon glyphicon-plus white plus btn-success plus"></button>
+                <button class="delete delete-button btn-primary glyphicon glyphicon-remove"></button>
+            </div>
+            <div class="picture-halfed">
+                <img class="picture-container" src="<%= pizza.icon %>">
+            </div>
+        </div>
     </div>
 </div>
